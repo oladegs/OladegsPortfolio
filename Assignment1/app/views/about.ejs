@@ -1,0 +1,32 @@
+ <!--
+    File Name: About Me File 
+    Student's Name: Farouk Oladega
+    StudentID: 301272363
+    Date: 04-Oct-2023
+ -->
+<% include partials/header.ejs %>
+<% include partials/content.ejs %>
+  <body>
+  <div class="container">
+    <h1><b><%= title %></b></h1>
+    <div class="about-grid">
+      <div class="image-frame">
+        <img src="/images/FkLog.jpg" alt="my_picture" />
+      </div>
+      <div class="about-content">
+        <h2>Name: <%= name %></h2>
+        <hr>
+        <p>
+          I am a passionate and dedicated <%= field %> with a strong commitment to excellence in <%= industry %> . With a proven track record of excellence in <%= skill %> , I am driven by a desire to be a <%= field %> . I thrive in dynamic environments that challenge me to continually expand my skill set and embrace new opportunities. My approach is characterized by a relentless pursuit of improvement and a focus on <%= principles %> 
+        </p>
+        <p>
+          In my spare time, I enjoy <%= hobby1 %>  and <%= hobby2 %> . These activities not only provide balance to my professional life but also contribute to my creative thinking and problem-solving abilities. I am excited about the potential to collaborate with forward-thinking organizations and individuals who share my passion for <%= industry %> . Let's connect and explore how we can work together to achieve great things.
+        </p>
+        <hr>
+        <a href="/my_projects/FarRez.pdf" target="_blank" class="resume-button">My Resume</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+<% include partials/footer.ejs %>

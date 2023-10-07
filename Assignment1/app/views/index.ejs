@@ -1,0 +1,44 @@
+ <!--
+    File Name: Index File For Homepage 
+    Student's Name: Farouk Oladega
+    StudentID: 301272363
+    Date: 04-Oct-2023
+ -->
+  
+  <% include partials/header.ejs %>
+  <% include partials/content.ejs %>
+  <body>
+
+    <div class="container">
+        <h1><b> <%= title %></b></h1>
+        <hr>
+        <div class="welcome-message">
+            <h5><b>Welcome Message:</b></h5>
+            <p>Greetings and welcome to my personal portfolio! My name is <b><%= name %></b>. I'm thrilled that you've taken the time to explore my work and learn more about my journey. Whether you're here to check out my projects, get to know me better, or just curious about what I do, I hope you find inspiration and insight within these digital pages.</p>
+        </div>
+        <hr>
+        <div class="mission-statement">
+            <h5><b>Mission Statement:</b></h5>
+            <p>At <%= name %>'s Portfolio, my mission is to showcase my passion, creativity, and dedication to being a <%= field %>. I believe that every project, big or small, tells a unique story. Through my work, I aim to:</p>
+            <div class="mission-goals">
+                <div>
+                    <h6><b>Inspire:</b></h6>
+                    <p>My creations are a reflection of my passion for being a <%= field %>. I hope they inspire you to think differently, see the world from a new perspective, or ignite your own creativity.</p>
+                </div>
+                <div>
+                    <h6><b>Educate:</b></h6>
+                    <p>I'm committed to sharing my knowledge and experiences to help others. Whether you're a fellow professional seeking insights or someone just starting out, I strive to provide valuable information and resources.</p>
+                </div>
+                <div>
+                    <h6><b>Connect:</b></h6>
+                    <p>I value the connections we can make through our shared interests. I invite you to reach out, share your thoughts, or collaborate on exciting projects. Together, we can create something remarkable.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>As you navigate through my portfolio, you'll find a collection of my best work and a glimpse into the journey that has brought me here. I'm continually evolving and growing in my field, and I invite you to join me on this creative adventure. Thank you for visiting <%= name %>'s Portfolio. Your support and interest mean the world to me. Enjoy your exploration, and feel free to connect with me if you'd like to collaborate, share feedback, or just have a chat.</p>
+    </div>
+
+</body>
+
+<% include partials/footer.ejs %>

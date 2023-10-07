@@ -1,0 +1,54 @@
+<% include partials/header.ejs %>
+<% include partials/content.ejs %>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-5"><b>My <%= title %></b></h1>
+
+    <div class="row">
+      <!-- Web Development Service -->
+      <div class="col-md-4">
+        <div class="service-card text-center p-4">
+          <i class="service-icon fas fa-laptop-code"></i>
+          <h3 class="service-title"><b><%= services1 %></b></h3>
+          <div class="service-image1">
+            <img src="/images/WebDev.png" alt="Web Development Image" />
+          </div>
+          <p class="service-description">
+            I offer professional web development services. I create custom, responsive websites, optimize performance, and provide ongoing maintenance. My focus is on delivering user-friendly, visually appealing, and secure online solutions for clients.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mobile App Development Service -->
+      <div class="col-md-4">
+        <div class="service-card text-center p-4">
+          <i class="service-icon fas fa-mobile-alt"></i>
+          <h3 class="service-title"><b><%= services2 %></b></h3>
+          <div class="service-image">
+            <img src="/images/MobileApp.jpg" alt="Web Development Image" />
+          </div>
+          <p class="service-description">
+           I excel in mobile application development, crafting apps for iOS and Android using top technologies like Flutter, React Native, and more. My services include app design, development, testing, and maintenance. I focus on creating user-friendly and feature-rich mobile experiences that align with client goals.
+          </p>
+        </div>
+      </div>
+
+      <!-- General Programming Service -->
+      <div class="col-md-4">
+        <div class="service-card text-center p-4">
+          <i class="service-icon fas fa-code"></i>
+          <h3 class="service-title"><b><%= services3 %></b></h3>
+          <div class="service-image1">
+            <img src="/images/Programmn.jpg" alt="Web Development Image" />
+          </div>
+          <p class="service-description">
+            I provide expert programming services, specializing in various languages and frameworks. From web apps to games, I bring ideas to life, ensuring functionality, performance, and reliability. My goal is to help clients achieve their project objectives through skilled coding and robust software solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<% include partials/footer.ejs %>

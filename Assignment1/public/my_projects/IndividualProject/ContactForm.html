@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class=" item item1">
+        <header>
+            <h1>WeTheBest Realty Inc.</h1>
+          </header>
+    </div>
+
+    <div class="item item2">
+      <nav>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="AvailableProperties.html">Active Listings</a></li>
+        <li id="page">Contact</li>
+        <li><a href="SiteMapsCreditPage.html">Sitemap</a></li>
+     </nav>
+    </div>
+
+    <div class="item item3">
+         <main>
+                  <h2><span lang="en-ca"><u>Contact us for your Dream Home:</u></span></h2>
+        <form method="post" action="mailto:adeyinkaoladega@gmail.com">
+            <label for="Fname"><b>First Name:</b></label>
+            <input type="text" name="Fname" id="Fname" size="53"  required><br><br>
+        
+            <label for="Lname"><b>Last Name:</b></label>
+            <input type="text" name="Lname" id="Lname" size="53"  required><br><br>
+        
+            <label for="cellnumb"><b>Phone Number:</b></label>
+            <input type="telephone" name="cellnumb" id="cellnumb" placeholder="000 000 0000" required><br><br>
+        
+            <label><b>Your Email:</b></label>
+            <input type="email" name="txtEmail" id="txtEmail" placeholder="someone@gmail.com" required><br><br>
+        
+            <label for="property">Type Of Property</label>
+            <select id="property" name="property">
+              <option value="house">House</option>
+              <option value="Condominium">Condominium</option>
+            </select> <br><br>
+        
+            <label>Number Of Bathrooms:
+                <input type="number" min="1" max="3">
+            </label> <br><br>
+        
+            <label>Number Of Bedrooms:
+                <input type="number" min="1" max="4">
+            </label> <br><br>
+        
+            
+            <label>Price Range:
+            $500,000<input type="range" min="500000" max="850000" value="10000">850,000
+            </label><br><br>
+        
+            <label for="Comments"><b>Additional Comments text area: </b></label><br>
+            <textarea id="Comments" name="Comments" placeholder="Add some comments..." cols="60" rows="8"></textarea>
+        <br><br>
+            <input type="submit" value="Submit Results"> <input type="reset">
+        </form>
+        </main>  
+         </div>
+         
+    <div class="item item4" >
+        <aside>
+            <figure>
+            <img src="images\MrFarouk.RealAgent.jpg" width="320" height="300" alt="Real Agent, Farouk Oladega">
+                <br>Phone: (416) 888-3476
+                <br>Email: <a href="mailto:adeyinkaoladega@gmail.com">adeyinkaoladega@gmail.com</a>
+            </figure>
+          </aside> 
+
+    </div>
+    <div class="item item5">
+        <footer>
+            Copyright &copy; 2022
+          </footer>
+    </div>
+    
+</div>
+</body>
+</html>
