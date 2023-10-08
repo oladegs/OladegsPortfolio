@@ -36,7 +36,7 @@ router.get("/about", function (req, res, next) {
 
 /* GET Projects page */
 router.get("/projects", function (req, res, next) {
-  res.render("projects", {
+  res.render("Projects", {
     title: "My Projects",
     project1: "Guess The Number",
     project2: "Play Dice",
