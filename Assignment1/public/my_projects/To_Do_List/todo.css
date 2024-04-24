@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 70px 80px 600px 70px;
+  grid-template-rows: 70px 80px 600px 50px 70px;
   gap: 10px;
   background-color: #525427;
   padding: 10px;
@@ -146,4 +146,39 @@ input {
 .foot {
   padding: 15px;
   font-style: italic;
+}
+
+.efficiency-container {
+  position: relative;
+  background-color: #fff; /* Adjust background color */
+  height: 40px; /* Adjust height */
+  margin: 10px; /* Adjust margin */
+}
+
+.efficiency-bar {
+  position: relative;
+  background-color: #ddd;
+  height: 25px;
+  margin-top: 10px;
+  font-style: italic; /* Italic font style */
+  font-size: 24px; /* Reduced font size */
+}
+
+.efficiency-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  background-color: #888; /* Default color */
+  transition: width 0.3s ease; /* Smooth transition for width changes */
+}
+
+.efficiency-bar::before {
+  content: attr(data-content); /* Show percentage text */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
 }
