@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="todo.css" />
+    <title>To_Do_List</title>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <!--First div-->
+      <div class="todo">To Do List</div>
+
+      <!--Second div-->
+      <div id="myDIV" class="header">
+        <input type="text" id="myInput" placeholder="what's on your mind..." />
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+
+      <!--Third div-->
+      <div>
+        <ul id="myUL">
+          <li class="checked">Pray</li>
+          <li>Hit the gym</li>
+          <li>Eat eggs and bread</li>
+          <li>Study</li>
+          <li>Meetings</li>
+          <li>Organize office</li>
+        </ul>
+      </div>
+
+      <!--Fourth div-->
+      <div class="foot">
+        &copy;
+        <small>Copyright 2024 | adeyinkaoladega@gmail.com</small>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
