@@ -42,6 +42,7 @@ router.get("/projects", function (req, res, next) {
     project2: "Play Dice",
     project3: "Real Estate",
     project4: "To do List",
+    project5: "Rock-Paper-Scissors",
   });
 });
 
