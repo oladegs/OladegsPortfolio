@@ -193,7 +193,7 @@ input {
 }
 
 /* Media query for responsiveness */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .grid-container {
     grid-template-columns: auto;
   }
