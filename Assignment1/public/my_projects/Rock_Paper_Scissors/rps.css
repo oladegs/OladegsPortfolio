@@ -67,21 +67,12 @@ body {
 }
 
 /* Media query for responsiveness */
-@media screen and (max-width: 600px) {
-  /* Adjust styles here for smaller screens if needed */
-  .topic {
-    display: flex;
-    justify-content: center;
-    margin: 0 2px;
-    font-size: 15px;
-    font-style: italic;
-    color: rgb(198, 191, 167);
-  }
-
+@media screen and(max-width: 480px) {
+  .topic,
+  .selections,
+  .results,
   .result-score {
-    margin-left: 0.1rem;
-    font-size: 0.5rem;
-    color: rgb(255, 0, 0);
+    font-size: 1rem;
     font-style: italic;
   }
 }
