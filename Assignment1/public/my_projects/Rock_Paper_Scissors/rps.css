@@ -70,6 +70,7 @@ body {
 @media screen and(max-width: 480px) {
   .topic,
   .selections,
+  .selection,
   .results,
   .result-score {
     font-size: 1rem;
