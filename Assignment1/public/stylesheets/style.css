@@ -1,7 +1,7 @@
 /* Custome Css goes here */
 
 body {
-  background-color: rgb(235, 229, 229);
+  background: linear-gradient(to right, #ffffff, #000000);
   font-family: Arial, sans-serif;
   text-align: left;
 }

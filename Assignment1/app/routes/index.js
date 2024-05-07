@@ -44,6 +44,7 @@ router.get("/projects", function (req, res, next) {
     project4: "To do List",
     project5: "Rock,Paper,Scissors",
     project6: "Random Quote Generator",
+    project7: "Calculator",
   });
 });
 
@@ -61,11 +62,12 @@ router.get("/services", function (req, res, next) {
 router.get("/contact", function (req, res, next) {
   res.render("contact", {
     title: " Contact",
-    address: " 123 Xyz Street",
-    phone: " 416-888-3476",
-    email: " foladega@my.centennialcollege.ca",
+    address: " Toronto,ON ",
+    phone: " 416-888-3476 ",
+    email: " foladega@my.centennialcollege.ca ",
   });
 });
+
 
 /* GET Submit Form page */
 router.post("/submitForm", function (req, res, next) {
