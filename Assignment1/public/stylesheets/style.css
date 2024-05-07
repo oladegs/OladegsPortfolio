@@ -1,53 +1,156 @@
+/* Custome Css goes here */
+
 body {
-  background: linear-gradient(to right, #000080, #000000);
+  background: linear-gradient(to right, #0f0f0f, #050505);
   font-family: Arial, sans-serif;
   text-align: left;
 }
 
-h1,
-h4 {
-  color: #fff;
+h1 {
+  color: #2d4747;
   text-align: center;
 }
 
-.service-card,
-.project-card,
-.contact-info,
-.contact-form,
-.container {
+h4 {
+  color: #2d4747;
+  text-align: center;
+}
+
+/* Style for service cards */
+.service-card {
   background-color: #fff;
   padding: 20px;
+  border: 1px solid #e0e0e0;
   border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
+/* Style for service icons */
 .service-icon {
+  font-size: 36px;
   color: #007bff;
+  margin-bottom: 10px;
 }
 
-.service-title,
-.service-description,
-.project-title,
-.project-details {
+/* Style for service titles */
+.service-title {
+  font-size: 18px;
   color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.service-card:hover,
-.project-card:hover {
-  background-color: rgb(199, 197, 197);
+/* Style for service descriptions */
+.service-description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Hover effect on service cards */
+.service-card:hover {
   transform: scale(1.05);
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgb(199, 197, 197);
 }
 
-.service-image img,
-.service-image1 img,
-.project-image img {
+/* Add this CSS to style the service images */
+.service-image img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.service-image1 img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
   margin-top: 20px;
 }
 
+/* Project container */
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Heading style */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Project card style */
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Project image style */
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Project info style */
+.project-info {
+  padding: 20px;
+}
+
+/* Project title style */
+.project-title {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+/* Project details style */
+.project-details {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Add a hover effect */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgb(199, 197, 197);
+}
+
+/* Grid container for image and content */
+.about-grid {
+  display: grid;
+  grid-template-columns: 220px auto;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+/* Style for the image frame */
+.image-frame {
+  border: 5px solid #c8ccd1;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Style for the image */
+.image-frame img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Style for the about content */
+.about-content {
+  padding: 20px;
+}
+
+/* Additional styles for the content as needed */
 .about-content h2 {
   color: #333;
 }
@@ -56,38 +159,78 @@ h4 {
   color: #666;
 }
 
+/* Style for the resume button */
 .resume-button {
+  display: inline-block;
+  padding: 10px 20px;
   background-color: #3f7dc0;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 .resume-button:hover {
   background-color: rgb(15, 65, 46);
 }
 
-.contact-info,
-.contact-form {
+/* Grid container for contact info and form */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+}
+
+/* Style for contact info section */
+.contact-info {
   background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-label,
+/* Style for contact form section */
+.contact-form {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7;
+}
+
+/* Label style */
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Input and textarea style */
 input[type="text"],
 input[type="tel"],
 input[type="email"],
-textarea,
-input[type="submit"] {
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
+/* Submit button style */
 input[type="submit"] {
   background-color: #3f7dc0;
   color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
   background-color: rgb(15, 65, 46);
 }
 
+/* Add a hover effect */
 .container:hover {
   transform: scale(1.05);
   box-shadow: 0px 8px 12px rgba(97, 85, 41, 0.2);
@@ -134,11 +277,4 @@ hr {
   padding: 10px;
   border-radius: 5px;
   background-color: #f9f9f9;
-}
-
-/* Media query for devices with width 360px and above */
-@media only screen and (min-width: 360px) {
-  .container {
-    padding: 10px;
-  }
 }
